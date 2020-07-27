@@ -1,0 +1,250 @@
+;;; Name: Josephine Garces                           Date: 3/18/2014
+;;; Course: ICS313        Project: Cotton
+;;; File: cottonOut.txt		Assignment: 6
+;;;
+;;; A horror-esque text-based adventure game using the
+;;; functions and macros built from The Wizard's Game 
+;;; in Conrad Barski's Land of Lisp. Slightly more interesting
+;;; and convoluted! It is not that scary.
+
+
+==========LOSING GAME============
+
+Script started on Fri Apr 11 10:27:09 2014
+[?1034hbash-3.2$ clisp
+  i i i i i i i       ooooo    o        ooooooo   ooooo   ooooo
+  I I I I I I I      8     8   8           8     8     o  8    8
+  I  \ `+' /  I      8         8           8     8        8    8
+   \  `-+-'  /       8         8           8      ooooo   8oooo
+    `-__|__-'        8         8           8           8  8
+        |            8     o   8           8     o     8  8
+  ------+------       ooooo    8oooooo  ooo8ooo   ooooo   8
+
+Welcome to GNU CLISP 2.49 (2010-07-07) <http://clisp.cons.org/>
+
+Copyright (c) Bruno Haible, Michael Stoll 1992, 1993
+Copyright (c) Bruno Haible, Marcus Daniels 1994-1997
+Copyright (c) Bruno Haible, Pierpaolo Bernardi, Sam Steingold 1998
+Copyright (c) Bruno Haible, Sam Steingold 1999-2000
+Copyright (c) Sam Steingold, Bruno Haible 2001-2010
+
+Type :h and hit Enter for context help.
+
+[1]> [?1034h(load "coot[K[Ktton.lisp")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+;; Loading file cotton.lisp ...
+;; Loaded file cotton.lisp
+T
+[2]> (game)[C[C[C[C[C[C
+You open your eyes, and you are greeted by an unfamiliar ceiling.
+Startled, you get to your feet and quickly scan your surroundings. It's
+dark except for the stream of light coming from a crack on the only boarded
+window in the room. You try to peek through the crack, but you cannot see
+anything. You wonder where you are and who could have possibly brought you here.
+<--------------------help------------------------>
+Enter quit or one of the following commands -
+Weld light look walk pickup inventory help h ?
+<------------------------------------------------>
+look
+The room is a picture of decay with only a faded number identifying it as room-4. The bed you were
+ lying on is stained with what looks like dried blood. Could it be your blood? No - it is not. The
+ only way out of the room aside from the door to the corridor is a window that is boarded shut. It
+ looks like it has been like that for decades. There is a door going west from here. You see a candle
+ on the floor. You see a match on the floor.
+pik[Kckup candle
+- you are now carrying the candle -
+pickup match
+- you are now carrying the match -
+light match candle
+The candle is now lit. It illuminates everything in the room.
+walk west
+The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
+ there are words written on the wall. There is a door going east from here. There is a way going north
+ from here. There is a door going south from here.
+read wall
+I do not know that command.
+study wall
+The following words are scratched onto the wall - get out of here! Be careful! Do not die! Do not go
+ to the basement. Please survive!
+walk north
+It feels eerie here. The air turns frigid. You feel as if someone is behind you. You turn around but
+ there is no one there. The large looming door to the north can be opened with a key. There is a way
+ going south from here. There is a door going east from here.
+walk east
+You feel the urge to vomit. The sight of a corpse strapped to a hospital bed welcomes you. It is
+ skeletal yet well preserved. It seems to have been strapped there for so long its skin has grown over
+ the restraints. There is a door going west from here. You see a key on the floor. You see a rod on
+ the floor. You see a note2 on the floor.
+pickup key
+- you are now carrying the key -
+walk west
+It feels eerie here. The air turns frigid. You feel as if someone is behind you. You turn around but
+ there is no one there. The large looming door to the north can be opened with a key. There is a way
+ going south from here. There is a door going east from here.
+walk south
+The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
+ there are words written on the wall. There is a door going east from here. There is a way going north
+ from here. There is a door going south from here.
+walk south
+This room could easily be mistaken for a bathroom. It certainly smells like you just halved you life.
+ it looks like it was once a laboratory. There are tubes and beakers of all shapes and sizes. The jars
+ lining the walls seem to contain... Human organs. There is a welding machine in the corner. There is
+ a door going north from here. There is a stair going downstairs from here. You see a scalpel on the
+ floor. You see a note1 on the floor.
+walk do[K[K[K[K[K[K[Kwalk sou[K[K[Kdownsat[K[Ktairs
+You barely manage to breathe down here. Each time you inhale fills your lungs with dust. You can open
+ the door to the west with a key. There is a stair going upstairs from here. There is a door going
+ north from here.
+unlock door
+You have unlocked the door to room-2.
+walk was[K[Kest
+It looks like this room was used for storage. There is nothing much inside aside from the various
+ hospital equipment pushed against the walls. There is a figure before you. Looking closer you observe
+ that it is a girl with long hair wearing a ragged hospital gown. She has her back turned towards you
+ so you cannot see her face. You call out to her but she does not respond. There is a door going east
+ from here.
+poke girl
+She slowly turns around. Where her face should be is a gaping hole lined with shark-like teeth.
+ perhaps you should not have poked her. She lunges at you and takes a bite of your arm. You can still
+ run away but who knows how long you will survive. Perhaps you can defend yourself. Or leave now while
+ you still can.
+poke girl
+So you poked her again. This time she goes for your head. You have been decapitated. Sorry you lose!
+?
+<--------------------help------------------------>
+Enter quit or one of the following commands -
+Die help h ?
+<------------------------------------------------>
+T
+die
+You are dead. You cannot do anything. Please start a new game!
+exit[K[K[K[Kquit
+NIL
+[3]> quit[1Pdie[2P?poke girl[C[C[C[C[Cwalk west[C[C[C[C[Cpoke girl[C[C[C[C[C?[Kdiequit[K(oa[K[KL[Kload "coot[K[Ktton.lisp")[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C
+;; Loading file cotton.lisp ...
+;; Loaded file cotton.lisp
+T
+
+
+
+
+==========WINNING GAME============
+
+[4]> game[K[K[K[K(game_)[C[C[C[C[C[C[C[C[C[C[C[C[K[K)[C[C[C[C[C[C
+You open your eyes, and you are greeted by an unfamiliar ceiling.
+Startled, you get to your feet and quickly scan your surroundings. It's
+dark except for the stream of light coming from a crack on the only boarded
+window in the room. You try to peek through the crack, but you cannot see
+anything. You wonder where you are and who could have possibly brought you here.
+<--------------------help------------------------>
+Enter quit or one of the following commands -
+Weld light look walk pickup inventory help h ?
+<------------------------------------------------>
+pik[Kckup candle
+- you are now carrying the candle -
+pickup match
+- you are now carrying the match -
+light match candle
+The candle is now lit. It illuminates everything in the room.
+pi[K[Kwalk west
+The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
+ there are words written on the wall. There is a door going east from here. There is a way going north
+ from here. There is a door going south from here.
+walk north
+It feels eerie here. The air turns frigid. You feel as if someone is behind you. You turn around but
+ there is no one there. The large looming door to the north can be opened with a key. There is a way
+ going south from here. There is a door going east from here.
+walk north[K[K[K[K[K[K[Kk east
+You feel the urge to vomit. The sight of a corpse strapped to a hospital bed welcomes you. It is
+ skeletal yet well preserved. It seems to have been strapped there for so long its skin has grown over
+ the restraints. There is a door going west from here. You see a key on the floor. You see a rod on
+ the floor. You see a note2 on the floor.
+pickup key
+- you are now carrying the key -
+pikcup[K[K[K[Kckup rod
+- you are now carrying the rod -
+walk sout[K[K[K[Kwest
+It feels eerie here. The air turns frigid. You feel as if someone is behind you. You turn around but
+ there is no one there. The large looming door to the north can be opened with a key. There is a way
+ going south from here. There is a door going east from here.
+walk south
+The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
+ there are words written on the wall. There is a door going east from here. There is a way going north
+ from here. There is a door going south from here.
+walk south
+This room could easily be mistaken for a bathroom. It certainly smells like you just halved you life.
+ it looks like it was once a laboratory. There are tubes and beakers of all shapes and sizes. The jars
+ lining the walls seem to contain... Human organs. There is a welding machine in the corner. There is
+ a door going north from here. There is a stair going downstairs from here. You see a scalpel on the
+ floor. You see a note1 on the floor.
+wal[K[K[Kweld sc[K[K[K[K[K[K[Kpickup scalpel
+- you are now carrying the scalpel -
+wa[Keld scalpel rod
+The scalpel is now securely welded to the rod.
+walk downstairs
+You barely manage to breathe down here. Each time you inhale fills your lungs with dust. You can open
+ the door to the west with a key. There is a stair going upstairs from here. There is a door going
+ north from here.
+unlock door
+You have unlocked the door to room-2.
+walk west
+It looks like this room was used for storage. There is nothing much inside aside from the various
+ hospital equipment pushed against the walls. There is a figure before you. Looking closer you observe
+ that it is a girl with long hair wearing a ragged hospital gown. She has her back turned towards you
+ so you cannot see her face. You call out to her but she does not respond. There is a door going east
+ from here.
+strike girl
+You strike at the girl with your spear. You manage to cut her and render her immobile. Although not
+ yet dead... She loses interest in you and goes back to her original position. It seems like she will
+ not be getting up any time soon. You notice she dropped some things.
+look
+It looks like this room was used for storage. There is nothing much inside aside from the various
+ hospital equipment pushed against the walls. There is a figure before you. Looking closer you observe
+ that it is a girl with long hair wearing a ragged hospital gown. She has her back turned towards you
+ so you cannot see her face. You call out to her but she does not respond. There is a door going east
+ from here. You see a letter on the floor. You see a master-key on the floor.
+pickup master-key
+- you are now carrying the master-key -
+waal[K[Klk upstairs[K[K[K[K[K[K[K[Keast
+You barely manage to breathe down here. Each time you inhale fills your lungs with dust. You can open
+ the door to the west with a key. There is a stair going upstairs from here. There is a door going
+ north from here. There is a door going west from here.
+walk upstairs
+This room could easily be mistaken for a bathroom. It certainly smells like you just halved you life.
+ it looks like it was once a laboratory. There are tubes and beakers of all shapes and sizes. The jars
+ lining the walls seem to contain... Human organs. There is a welding machine in the corner. There is
+ a door going north from here. There is a stair going downstairs from here. You see a note1 on the
+ floor.
+walk north
+The corridor is lit with the candle. It is so long that you cannot see to the end. You notice that
+ there are words written on the wall. There is a door going east from here. There is a way going north
+ from here. There is a door going south from here.
+walk north
+It feels eerie here. The air turns frigid. You feel as if someone is behind you. You turn around but
+ there is no one there. The large looming door to the north can be opened with a key. There is a way
+ going south from here. There is a door going east from here.
+unlock door
+You have unlocked the door to room-10
+walk north
+What it is... You do not know. It rises. It is a mass of tangled limbs. The monster clicked its
+ mandibles and it locks on you with its enormous compound eye. There is a door going south from here.
+strike monster
+You strike at the monster. Its long arms try to grab a hold of you but you strike again. You land
+ more blows and manage to get the monster on his back. You take the chance to thrust the spear into
+ its head. You win! The monster dropped something.
+?
+<--------------------help------------------------>
+Enter quit or one of the following commands -
+Win help h ?
+<------------------------------------------------>
+T
+win
+The monster dropped cake but you cannot eat that. Can you? You have won. Turn off your computer and
+ go play outside.
+ex[K[Kquit
+NIL
+[5]> (exit)[C[C[C[C[C[C
+Bye.
+bash-3.2$ exit
+exit
+
+Script done on Fri Apr 11 11:29:27 2014

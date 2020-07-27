@@ -1,0 +1,5 @@
+;;; Name: Josephine Garces                           Date: 3/18/2014
+;;; Course: ICS313        Project: Cotton
+;;; File: Read.txt	Assignment: 6
+
+I did the project by myself, so I produced everything: story, output, code, and art.
